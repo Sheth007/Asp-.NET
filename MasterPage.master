@@ -1,0 +1,95 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+    </div>
+    <asp:Image ID="Image1" runat="server" Height="93px" ImageUrl="~/logo.png" 
+        Width="188px" />
+    <asp:Label ID="Label1" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="XX-Large" Text="Atmiya University"></asp:Label>
+    <br />
+    <asp:Menu ID="Menu1" runat="server" Orientation="Horizontal" BackColor="White" 
+        BorderWidth="0px" DynamicHorizontalOffset="1" 
+        Font-Bold="True" Font-Overline="False" Font-Italic="True">
+        <Items>
+            <asp:MenuItem Text="Unit 1" Value="Unit 1">
+                <asp:MenuItem NavigateUrl="~/I-card.aspx" Text="ID-Card" Value="List">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/User Value.aspx" Text="User Value" Value="List">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/CheckBox.aspx" Text="Check Box" Value="Check Box">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/CheckBox List.aspx" Text="CheckBox List" 
+                    Value="CheckBox List"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Radio Button.aspx" Text="Radio Button" 
+                    Value="Radio Button">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Radio Button LIst.aspx" Text="Radio Button List" 
+                    Value="Radio Button List"></asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Image.aspx" Text="Image" Value="List">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Image Button.aspx" Text="Image Button" 
+                    Value="List">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/List Box.aspx" Text="ListBox" Value="List">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/Button.aspx" Text="Button" Value="Button">
+                </asp:MenuItem>
+                <asp:MenuItem NavigateUrl="~/File Upload.aspx" Text="File Upload" 
+                    Value="File Upload"></asp:MenuItem>
+            </asp:MenuItem>
+            <asp:MenuItem Text="Unit 2" Value="Unit 2"></asp:MenuItem>
+            <asp:MenuItem Text="Unit 3" Value="Unit 3"></asp:MenuItem>
+            <asp:MenuItem Text="Unit 4" Value="Unit 4"></asp:MenuItem>
+            <asp:MenuItem Text="Unit 5" Value="Unit 5"></asp:MenuItem>
+        </Items>
+    </asp:Menu>
+      <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+        <br />
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+            <p>
+            </p>
+            <p>
+            </p>
+            <p>
+            </p>
+        
+        </asp:ContentPlaceHolder>
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <br />
+    <asp:Label ID="Label2" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="X-Large" Text="Created By: Sheth Uday " ForeColor="Red"></asp:Label>
+    <asp:Label ID="Label3" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="X-Large" Text="Roll No : 51 " ForeColor="#33CC33"></asp:Label>
+    <asp:Label ID="Label4" runat="server" Font-Bold="True" Font-Italic="True" 
+        Font-Size="X-Large" Text="Class : C4" ForeColor="#0066CC"></asp:Label>
+    <br />
+    </form>
+</body>
+</html>
